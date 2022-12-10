@@ -1,25 +1,31 @@
-<app-admin-navbar></app-admin-navbar>
-<h1>Admin Login</h1>
+<app-user-navbar></app-user-navbar>
+<h1>Welcome User!</h1>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="label-control">Username</label>
-                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                    <label for="" class="label-control">Email ID</label>
+                    <input name="emailId" [(ngModel)]="emailId" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="label-control">Password</label>
-                    <input type="password" name="password" [(ngModel)]="password" id="" class="form-control">
+                    <input name="password" [(ngModel)]="password" type="password" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button (click)="adminLoginCheck()" class="btn btn-success">Login</button>
+                    <button (click)="userVerify()" class="btn btn-success">Login</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <a routerLink="/userLogin">go to user login</a>
+                    <a routerLink="/">back to admin login</a>
                 </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <a routerLink="/userRegn">go to user Registeration</a>
+                </div>
+
             </div>
+
+
         </div>
     </div>
 </div>
