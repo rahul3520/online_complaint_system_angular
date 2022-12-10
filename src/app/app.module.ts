@@ -7,6 +7,14 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { UserRegnComponent } from './user-regn/user-regn.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { UserProfilepageComponent } from './user-profilepage/user-profilepage.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { AddComplaintPageComponent } from './add-complaint-page/add-complaint-page.component';
 
 const myRoute:Routes=[
   {
@@ -17,6 +25,26 @@ const myRoute:Routes=[
     path:"adminPage",
     component:AdminPageComponent
     
+  },
+  {
+    path:"adminNavbar",
+    component:AdminNavbarComponent
+  },
+  {
+    path:"userRegn",
+    component:UserRegnComponent
+  },
+  {
+    path:"userLogin",
+    component:UserLoginComponent
+  },
+  {
+    path:"userProfile",
+    component:UserProfilepageComponent
+  },
+  {
+    path:"registerComplaint",
+    component:AddComplaintPageComponent
   }
 ]
 
@@ -25,12 +53,19 @@ const myRoute:Routes=[
     AppComponent,
     AdminLoginComponent,
     AdminPageComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    UserRegnComponent,
+    UserLoginComponent,
+    UserProfilepageComponent,
+    UserNavbarComponent,
+    AddComplaintPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
