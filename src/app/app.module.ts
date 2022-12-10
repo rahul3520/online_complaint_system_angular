@@ -16,6 +16,9 @@ import { UserProfilepageComponent } from './user-profilepage/user-profilepage.co
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { AddComplaintPageComponent } from './add-complaint-page/add-complaint-page.component';
 import { UserPortalComponent } from './user-portal/user-portal.component';
+import { AdminPortalComponent } from './admin-portal/admin-portal.component';
+import { AdminportalNavbarComponent } from './adminportal-navbar/adminportal-navbar.component';
+import { UserLogoutNavbarComponent } from './user-logout-navbar/user-logout-navbar.component';
 
 const myRoute:Routes=[
   {
@@ -50,6 +53,10 @@ const myRoute:Routes=[
   {
     path:"userPortal",
     component:UserPortalComponent
+  },
+  {
+    path:"adminPortal",
+    component:AdminPortalComponent
   }
 ]
 
@@ -64,7 +71,10 @@ const myRoute:Routes=[
     UserProfilepageComponent,
     UserNavbarComponent,
     AddComplaintPageComponent,
-    UserPortalComponent
+    UserPortalComponent,
+    AdminPortalComponent,
+    AdminportalNavbarComponent,
+    UserLogoutNavbarComponent
   ],
   imports: [
     BrowserModule,

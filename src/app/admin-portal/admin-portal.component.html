@@ -1,0 +1,37 @@
+<app-adminportal-navbar></app-adminportal-navbar>
+<style>
+    h3 {text-align: center;}
+</style>
+<h3>List of complaints</h3>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>DOB</th>
+                        <th>Address</th>
+                        <th>Phone No</th>
+                        <th>Email</th>
+                        <th>Complaint</th>
+                    </tr>
+                </thead>
+
+                <tbody *ngFor="let i of joinedData">
+                    <tr>
+                        <td>{{i.name}}</td>
+                        <td>{{i.dob}}</td>
+                        <td>{{i.address}}</td>
+                        <td>{{i.phone_no}}</td>
+                        <td>{{i.email_id}}</td>
+                        <td>{{i.complaint}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>
