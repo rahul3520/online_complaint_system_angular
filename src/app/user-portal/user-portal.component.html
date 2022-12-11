@@ -1,0 +1,25 @@
+<app-user-navbar></app-user-navbar>
+<h4>My complaints</h4>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>user ID</th>
+                        <th>complaint description</th>
+                    </tr>
+                </thead>
+
+                <tbody *ngFor="let i of complaintList">
+                    <tr>
+                        <td>{{i.userId}}</td>
+                        <td>{{i.complaint}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
